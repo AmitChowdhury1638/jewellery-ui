@@ -15,6 +15,16 @@ import { TopmenuComponent } from './topmenu/topmenu.component';
 import { ProductCarouselComponent } from './product-carousel/product-carousel.component';
 import {ButtonModule} from 'primeng/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { NavComponent } from './nav/nav.component';
+import { HeadComponent } from './head/head.component';
+import { FootComponent } from './foot/foot.component';
+import { FilterComponent } from './shopping-cart/filter/filter.component';
+import { ProductListComponent } from './shopping-cart/product-list/product-list.component';
+import { CartComponent } from './shopping-cart/cart/cart.component';
+import {SliderModule} from 'primeng/slider';
+import { FormsModule } from '@angular/forms';
+import {CheckboxModule} from 'primeng/checkbox';
 
 
 @NgModule({
@@ -26,7 +36,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CarouselComponent,
     MenuComponent,
     TopmenuComponent,
-    ProductCarouselComponent
+    ProductCarouselComponent,
+    ShoppingCartComponent,
+    NavComponent,
+    HeadComponent,
+    FootComponent,
+    FilterComponent,
+    ProductListComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +52,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MegaMenuModule,
     ButtonModule,
     FontAwesomeModule,
-    NgbModule
+    SliderModule,
+    NgbModule,
+    FormsModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,65 @@
+<div class="grid">
+    
+    <div class="filter">
+        <div class="col-12 md:col-6 lg:col-3">
+            <h6>RANGE</h6>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            <p-slider [(ngModel)]="rangeValues" [range]="true"></p-slider>
+            <div style="padding: 6px;">{{rangeValues[0] + ' - ' + rangeValues[1]}}</div>
+        </div>
+    </div>
+    
+    <div class="filter">
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="filter-header">PRODUCT TYPE</div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <p-checkbox name="groupname" value="val1" [(ngModel)]="selectedValues"></p-checkbox>
+                <span class="filter-text">Diamond Rings</span>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <p-checkbox name="groupname" value="val2" [(ngModel)]="selectedValues"></p-checkbox>
+                <span class="filter-text">Gold Rings</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter">
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="filter-header">GOLD PURITY</div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <p-checkbox name="groupname" value="val3" [(ngModel)]="selectedValues"></p-checkbox>
+                <span class="filter-text">14 kt</span>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <p-checkbox name="groupname" value="val4" [(ngModel)]="selectedValues"></p-checkbox>
+                <span class="filter-text">18 kt</span>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <p-checkbox name="groupname" value="val5" [(ngModel)]="selectedValues"></p-checkbox>
+                <span class="filter-text">22 kt</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter">
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="filter-header">METAL COLOR</div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <p-checkbox name="groupname" value="val6" [(ngModel)]="selectedValues"></p-checkbox>
+                <span class="filter-text">Yellow</span>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <p-checkbox name="groupname" value="val7" [(ngModel)]="selectedValues"></p-checkbox>
+                <span class="filter-text">White</span>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <p-checkbox name="groupname" value="val8" [(ngModel)]="selectedValues"></p-checkbox>
+                <span class="filter-text">Rose</span>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</div>
